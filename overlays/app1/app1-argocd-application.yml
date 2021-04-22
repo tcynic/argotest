@@ -1,17 +1,17 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: namespaces
+  name: argocd-developers
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: argocd
     server: https://kubernetes.default.svc
-  project: namespaces
+  project: argocd-developers
   source:
-    path: overlays/environment
+    path: overlays/app1
     repoURL: https://github.com/tcynic/argotest.git
     targetRevision: main
   syncPolicy:
     automated:
-      prune: true
+      prune: false
       selfHeal: true
