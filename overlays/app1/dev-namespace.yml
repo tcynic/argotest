@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: App1 Dev
+    openshift.io/display-name: App1 Dev
+  name: app1-dev
