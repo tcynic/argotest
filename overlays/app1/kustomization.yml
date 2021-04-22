@@ -2,7 +2,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - dev-namespace.yml
-  - prod-namespace.yml
   - app1-argocd-application.yml
   - app1-argocd-project.yml
