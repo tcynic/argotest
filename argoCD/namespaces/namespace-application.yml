@@ -1,0 +1,17 @@
+kind: Application
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: namespaces
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: namespaces
+  source:
+    path: gitops/overlays/01-environments/00-ga
+    repoURL: https://github.com/tcynic/argotest.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
