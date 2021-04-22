@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: argocd-developers
+  project: app1-developers
   source:
     path: overlays/app1
     repoURL: https://github.com/tcynic/argotest.git
