@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  annotations:
-    openshift.io/description: App1 CI/CD
-    openshift.io/display-name: App1 CI/CD
-  name: app1-cicd
