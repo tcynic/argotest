@@ -1,7 +1,8 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: gitops-argocd-application-controller-admin
+  name: gitops1-argocd-application-controller-admin
+  namespace: team1-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
