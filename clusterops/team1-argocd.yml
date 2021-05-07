@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ArgoCD
+metadata:
+  name: team1
+  namespace: team1-gitops
+spec:
+  server:
+    route:
+      enabled: true
